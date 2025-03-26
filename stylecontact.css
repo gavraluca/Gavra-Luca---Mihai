@@ -1,14 +1,17 @@
-* {
+* 
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
-  html 
-  {
-      scroll-behavior: smooth; 
-      overflow-y: scroll;
-  }
+
+
+html 
+{
+    scroll-behavior: smooth; 
+    overflow-y: scroll;
+}
 
 header
 {
@@ -35,65 +38,7 @@ header
     animation: slideUp 0.8s ease-out forwards;
 }
 
-#pic
-{
-    padding: 30px;
-    text-align: center;
-    
-}
 
-#lucapic
-{
-    margin-top: 200px;
-    width: 250px;
-    height: 250px;
-    border-radius: 999px;
-
-    opacity: 0; 
-    animation: slideUp 0.8s ease-out forwards;
-}
-
-#hi
-{
-    text-align: center;
-    color: rgb(14, 29, 117);
-    padding: 30px;
-    font-family:'Inter', sans-serif;
-    font-size: 40px;
-
-    opacity: 0; 
-    animation: slideUp 0.8s ease-out forwards;
-}
-
-.aboutme {
-    font-family: 'Inter', sans-serif;
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: center;
-    color: #333;
-
-    opacity: 0; 
-    animation: slideUp 0.8s ease-out forwards;
-}
-
-.aboutme h2 {
-    font-size: 28px;
-    font-weight: 600;
-    color: #0073e6;
-    margin-bottom: 10px;
-
-    opacity: 0; 
-    animation: slideUp 0.8s ease-out forwards;
-}
-
-.aboutme p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 15px;
-
-    opacity: 0; 
-    animation: slideUp 0.8s ease-out forwards;
-}
 
 nav
 {
@@ -102,7 +47,6 @@ nav
     flex-wrap: wrap; 
     gap: 10px;
     justify-content: center;
-
 }
 
 nav ul li
@@ -114,7 +58,6 @@ nav ul li
     border-radius: 30px;
     font-size: 18px;
     color: blue;
-
 }
 
 nav ul
@@ -124,7 +67,6 @@ nav ul
     list-style: none;
     margin: 0 30px;
     border-radius: 30px;
-
 }
 
 .btn
@@ -147,18 +89,38 @@ nav ul
 {
     background-color: #006a9b; 
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-    transition: background 0.3s ease;
-    
+    transition: background 0.3s ease, transform 0.2s ease-in-out;
 }
 
-@media (max-width: 600px) 
+
+p
 {
-    .navbar 
-    {
-      flex-direction: column;
-      align-items: stretch;
-    }
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+
+    opacity: 0; 
+    animation: slideUp 0.8s ease-out forwards;
+
 }
+
+
+
+h3
+{
+    text-align: center;
+    color: #00aeff; 
+    margin-top: 100px;
+    margin-left: 20px;
+    font-family: 'Inter', sans-serif;
+
+    opacity: 0; 
+    animation: slideUp 0.8s ease-out forwards;
+
+}
+
+
+
 
 footer
 {
@@ -175,6 +137,19 @@ footer
 
 
 
+
+@media (max-width: 600px)
+{
+    .navbar {
+      flex-direction: column;
+      align-items: stretch;
+    }
+}
+
+
+
+
+
 @keyframes slideUp {
     from {
         opacity: 0;
@@ -185,3 +160,4 @@ footer
         transform: translateY(0);
     }
 }
+
